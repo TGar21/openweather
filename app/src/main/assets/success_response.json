@@ -1,0 +1,45 @@
+[
+  {
+    "name": "London",
+    "local_names": {
+      "ar": "لندن",
+      "ascii": "London",
+      "en": "London",
+      "fa": "لندن، اوهایو",
+      "feature_name": "London",
+      "sr": "Ландон"
+    },
+    "lat": 39.8865,
+    "lon": -83.4483,
+    "country": "US",
+    "state": "OH"
+  },
+  {
+    "name": "London",
+    "local_names": {
+      "ar": "لندن",
+      "ascii": "London",
+      "en": "London",
+      "fa": "لندن، کنتاکی",
+      "feature_name": "London",
+      "sr": "Ландон"
+    },
+    "lat": 37.129,
+    "lon": -84.0833,
+    "country": "US",
+    "state": "KY"
+  },
+  {
+    "name": "London",
+    "local_names": {
+      "ascii": "London",
+      "ca": "Londres",
+      "en": "London",
+      "feature_name": "London"
+    },
+    "lat": 36.4761,
+    "lon": -119.4432,
+    "country": "US",
+    "state": "CA"
+  }
+]
