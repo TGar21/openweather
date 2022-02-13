@@ -13,7 +13,7 @@ class WeatherHistory {
         val oldRecords = getRecordsFromSharedPrefs(context)
         val newRecord = WeatherRecord(city, temperature, timestamp)
         // API sometimes returns the result twice and we don't want duplicate records.
-        if (oldRecords.items.last().equalsWithWholeHours(newRecord)) {
+        if (oldRecords.items.isNotEmpty() && oldRecords.items.last().equalsWithWholeHours(newRecord)) {
             return
         }
         CustomSharedPrefs(context).weatherRecords = Gson().toJson(

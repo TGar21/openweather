@@ -47,10 +47,10 @@ class MainActivity : ComponentActivity() {
                 mutableTemperature.value = ""
                 mutableWeatherDesc.value = ""
             } else {
-                mutableNearestRecord.value = getString(R.string.city_name, mutableCityName, weatherData.name, weatherData.sys.country)
+                mutableNearestRecord.value = getString(R.string.city_name, mutableCityName.value, weatherData.name, weatherData.sys.country)
                 mutableTemperature.value = weatherData.main.temp.toString()
                 mutableWeatherDesc.value = weatherData.weather.joinToString(", ") { it.description }
-                WeatherHistory().saveResults(this, "$mutableCityName (${weatherData.name}):", weatherData.main.temp.toString(), System.currentTimeMillis())
+                WeatherHistory().saveResults(this, "${mutableCityName.value} (${weatherData.name}):", weatherData.main.temp.toString(), System.currentTimeMillis())
             }
         }
     }
